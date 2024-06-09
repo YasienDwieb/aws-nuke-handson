@@ -1,0 +1,42 @@
+regions:
+- eu-west-1
+- us-east-1
+- global
+
+account-blocklist:
+- "000000000000" # production
+
+accounts:
+  "111111111111": {} # aws-nuke-example
+
+resource-types:
+  # don't nuke IAM users
+  excludes:
+  - S3Bucket
+  - S3Object
+  - IAMUser
+  - IAMUserAccessKey
+  - IAMUserPolicy
+  - IAMRolePolicy
+  - IAMRole
+  - IAMPolicy
+  - IAMGroup
+  - IAMGroupPolicy
+  - IAMVirtualMFADevice
+  - IAMGroupPolicyAttachment
+  - IAMInstanceProfile
+  - IAMRolePolicyAttachment
+  - IAMInstanceProfileRole
+  - IAMLoginProfile
+  - IAMUserPolicyAttachment
+  - IAMUserGroupAttachment
+  - IAMServiceSpecificCredential
+  - LambdaFunction
+  - LambdaEventSourceMapping
+  - EC2Subnet
+  - OSPackage
+  - EC2DefaultSecurityGroupRule
+  - EC2SecurityGroup
+  - SNSTopic
+  - SNSSubscription
+  - SQSQueue
