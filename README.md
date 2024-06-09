@@ -5,6 +5,7 @@ AWS Nuke is a tool that can do AWS services discovery and mass deletion of them,
 - Detect what's already provisioned in your account
 - Delete resources in specific regions
 - Cleanup after a testing/handson setup
+- Great to handle multiple accounts at once
 
 
 ### Usage
