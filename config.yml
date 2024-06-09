@@ -4,13 +4,15 @@ regions:
 - global
 
 account-blocklist:
-- "000000000000" # production
+  # account sto be excluded, takes precedence over accounts list
+  # keep prod accounts here for safety and to avoid accidental deletion 
+- "000000000000"
 
 accounts:
-  "111111111111": {} # aws-nuke-example
+  # account that needs to be included
+  "111111111111": {}
 
 resource-types:
-  # don't nuke IAM users
   excludes:
   - S3Bucket
   - S3Object
